@@ -6,7 +6,8 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
+  url      = "file:./dev.db"
 }
 
 model User {
@@ -20,9 +21,9 @@ model Plan {
   id        String   @id @default(cuid())
   userId    String
   subject   String
-  syllabus  Json
-  schedule  Json
-  progress  Json     @default("{}")
+  syllabus  String
+  schedule  String
+  progress  String   @default("{}")
   user      User     @relation(fields: [userId], references: [id])
   createdAt DateTime @default(now())
 }

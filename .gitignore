@@ -43,7 +43,4 @@ next-env.d.ts
 # secrets
 DATABASE_URL=postgresql://…        # your database
 OPENAI_API_KEY=sk-…               # for the OpenAI calls
-
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_dG9sZXJhbnQtYmVldGxlLTExLmNsZXJrLmFjY291bnRzLmRldiQ
-CLERK_SECRET_KEY=sk_test_jb9cc9zjnLkOFisOPtG2u15M693JpVEXE6KIHbgjBd
-NEXT_PUBLIC_CLERK_FRONTEND_API=your-frontend-api
+  
